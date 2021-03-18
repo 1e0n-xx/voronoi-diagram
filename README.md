@@ -7,9 +7,9 @@ Lin Wang
 We choose Voronoi art for our project. For a given image and the number of points, our program can generate a Voronoi painting according to the original image. The flow chart is shown in Figure 1.
  
 Figure 1. Program flow chart
-
+![image](https://github.com/1e0n-xx/voronoi-diagram/blob/master/Voronoi%20diagram/figure%20(2).jpg)
 Figure 2 shows a picture of the Rotunda, and we take this image as an example to explain how we achieve the work.
- 
+ ![image](https://github.com/1e0n-xx/voronoi-diagram/blob/master/Voronoi%20diagram/figure%20(3).jpg)
 Figure 2. Example image
 
 First, we read the origin image into the program as a matrix, and blur it for a better performance. Then, we use canny edge detection to find the edges on the image. After that, we dilate the edge, and make subtraction of the two images. The aim of this step is to avoid putting points on the edge, or somewhere with little color difference. The process is shown through Figure 3 to 5.
